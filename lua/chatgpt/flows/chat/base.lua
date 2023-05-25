@@ -670,6 +670,10 @@ function Chat:open()
   -- close
   self:map(Config.options.chat.keymaps.close, function()
     self:hide()
+    vim.api.nvim_exec_autocmds(
+      "User",
+      { pattern = "ChatGPTClose", modeline = false }
+    )
   end)
 
   -- toggle settings

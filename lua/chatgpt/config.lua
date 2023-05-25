@@ -73,7 +73,6 @@ function M.defaults()
     },
     popup_window = {
       border = {
-        highlight = "FloatBorder",
         style = "rounded",
         text = {
           top = " ChatGPT ",
@@ -91,7 +90,6 @@ function M.defaults()
     },
     system_window = {
       border = {
-        highlight = "FloatBorder",
         style = "rounded",
         text = {
           top = " SYSTEM ",
@@ -107,7 +105,6 @@ function M.defaults()
     popup_input = {
       prompt = "  ",
       border = {
-        highlight = "FloatBorder",
         style = "rounded",
         text = {
           top_align = "center",

@@ -250,6 +250,10 @@ M.edit_with_instructions = function(output_lines, bufnr, selection, ...)
     for _, mode in ipairs({ "n", "i" }) do
       popup:map(mode, Config.options.edit_with_instructions.keymaps.close, function()
         layout:hide()
+        vim.api.nvim_exec_autocmds(
+          "User",
+          { pattern = "ChatGPTClose", modeline = false }
+        )
       end)
     end
   end
